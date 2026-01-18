@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Course</title>
+  <link rel="stylesheet" href="add-course.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Add New Course</h2>
+
+    <form onsubmit="saveCourse(event)">
+      
+      <div class="form-group">
+        <label>Course Name</label>
+        <input type="text" required>
+      </div>
+
+      <div class="form-group">
+        <label>Description</label>
+        <textarea rows="4" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Price</label>
+        <input type="number" required>
+      </div>
+
+      <button type="submit">Save Course</button>
+
+    </form>
+  </div>
+
+  <script>
+    function saveCourse(e) {
+      e.preventDefault();
+      alert("Course Added Successfully!");
+    }
+  </script>
+
+</body>
+</html>

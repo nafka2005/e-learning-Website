@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Courses</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  <style>
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background: #2c93bb;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+   
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: #102e5a;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #b6d4f1;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #c3d6e0;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffffff;
+    }
+
+    
+    .course-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 80px 8%;
+      flex: 1; 
+    }
+
+    .course-card {
+      background: #3a9bdc;
+      border-radius: 12px;
+      padding: 15px;
+      color: white;
+      box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+    }
+
+    .course-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .course-card h2 {
+      margin: 10px 0;
+      font-size: 25px;
+    }
+
+    .course-card p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .details-btn {
+      margin-top: 10px;
+      padding: 10px 19px;
+      border: none;
+      border-radius: 7px;
+      background: #0b2649;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    .details-btn:hover {
+      background: #061b33;
+    }
+
+    
+    footer {
+      background: #042335;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+<header class="navbar">
+  <div class="logo">E-Learning</div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="course.html">Courses</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<div class="course-container">
+  <div class="course-card">
+    <img src="web.jpeg" alt="Web Development">
+    <h2>Web Development</h2>
+    <p>Learn HTML, CSS, JavaScript and more.</p>
+    <a href="web.html" class="details-btn">Show Details</a>
+  </div>
+
+  <div class="course-card">
+    <img src="cloudcomputing.jpeg" alt="Cloud Computing">
+    <h2>Cloud Computing</h2>
+    <p>Learn AWS, Azure, Google Cloud and virtualization.</p>
+    <a href="cloud.html" class="details-btn">Show Details</a>
+  </div>
+
+  <div class="course-card">
+    <img src="mobile.jpeg" alt="Mobile App Development">
+    <h2>Mobile App</h2>
+    <p>Learn Android, iOS, Flutter, React Native.</p>
+    <a href="mobile.html" class="details-btn">Show Details</a>
+  </div>
+
+  <div class="course-card">
+    <img src="net.jpeg" alt="Networking">
+    <h2>Networking</h2>
+    <p>Learn CCNA, Routing, Switching, Network Security.</p>
+    <a href="network.html" class="details-btn">Show Details</a>
+  </div>
+</div>
+
+<footer>
+  <p>
+    Copyright © 2026 - ATI/SAM - All Rights Reserved.<br>
+    Development By NAFKANIYAS
+  </p>
+</footer>
+
+</body>
+</html>

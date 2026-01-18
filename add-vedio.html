@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Video</title>
+  <link rel="stylesheet" href="add-video.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Add New Video</h2>
+
+    <form onsubmit="saveVideo(event)">
+
+      <div class="form-group">
+        <label>Course Name</label>
+        <input type="text" id="courseName" placeholder="Eg: Web Design" required>
+      </div>
+
+      <div class="form-group">
+        <label>Video Title</label>
+        <input type="text" id="videoTitle" placeholder="Eg: HTML Introduction" required>
+      </div>
+
+      <div class="form-group">
+        <label>Video URL (YouTube)</label>
+        <input type="text" id="videoUrl" placeholder="https://www.youtube.com/..." required>
+      </div>
+
+      <div class="form-group">
+        <label>Video Thumbnail</label>
+        <input type="file" accept="image/*" onchange="previewImage(event)">
+      </div>
+
+      <div class="image-preview">
+        <img id="imagePreview">
+      </div>
+
+      <button type="submit">Add Video</button>
+
+    </form>
+  </div>
+
+  <script>
+    function saveVideo(e) {
+      e.preventDefault();
+      alert("Video Added Successfully!");
+    }
+
+    function previewImage(event) {
+      const img = document.getElementById("imagePreview");
+      img.src = URL.createObjectURL(event.target.files[0]);
+      img.style.display = "block";
+    }
+  </script>
+
+</body>
+</html>

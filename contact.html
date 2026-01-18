@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Learning System - Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            background: url("cntct.jpeg") no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #072649;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #b6d4f1;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #c3d6e0;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+        }
+
+       
+        .contact-container {
+            background: rgba(166, 242, 255, 0.9);
+            max-width: 420px;
+            margin: 60px auto;
+            padding: 30px;
+            border-radius: 16px;              
+            box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+            flex: 1; 
+        }
+
+        .contact-container h1 {
+            text-align: center;
+            color: #0b3c49;
+            margin-bottom: 10px;
+        }
+
+        .contact-container p {
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .contact-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .contact-container input,
+        .contact-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        .contact-container textarea {
+            resize: none;
+            height: 90px;
+        }
+
+        .contact-container input:focus,
+        .contact-container textarea:focus {
+            border-color: #3a9bdc;
+        }
+
+        .contact-container button {
+            width: 100%;
+            padding: 12px;
+            background: #0c3a47;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-container button:hover {
+            background: #062a33;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .contact-info a {
+            color: #0b3c49;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #042335;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">E-Learning</div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="contact-container">
+    <h1>Contact Us</h1>
+    <p>If you have any questions about our E-Learning System, please contact us.</p>
+
+    <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Enter your message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+<footer>
+    <p>
+        Copyright © 2026 - ATI/SAM - All Rights Reserved.<br>
+        Development By NAFKANIYAS
+    </p>
+</footer>
+
+</body>
+</html>

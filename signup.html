@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up - E Learning</title>
+  <link rel="stylesheet" href="signup.css">
+  <script src="your_script.js"></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">E-Learning</div>
+    <nav>
+      <ul class="nav-links">
+       <li><a href ="index.html">Home</a></li>
+        <li><a href="course.html">Courses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contect</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="admin-login.html">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="overlay">
+    <div class="signup-container">
+      <h2>Create Account</h2>
+      <p class="subtitle">Register to continue learning</p>
+
+      <form onsubmit="return validateForm()">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter Full Name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter Email" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Create Password" required>
+
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Confirm Password" required>
+
+        <button type="submit" class="btn">Sign Up</button>
+
+
+        <p class="login-text">
+          Already have an account?
+          <a href="login.html">Login</a>
+        </p>
+      </form>
+    </div>
+  </div>
+         <script>
+            function showSuccessAlert(event) {
+            
+            event.preventDefault(); 
+
+            alert("Success! Your data has been added to the database.");
+            window.location.href = "login.html"; 
+          }
+          </script>
+
+  <footer>
+    <p>Copyright © 2025 - ATI/SAM - All Rights Reserved.<br>
+     Development By NAFKANIYAS</p>
+  </footer>        
+
+</body>
+</html>

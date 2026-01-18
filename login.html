@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - E Learning</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  
+
+  <div class="overlay">
+    <div class="login-container">
+      <h2>Welcome Back</h2>
+  
+      <p class="subtitle">Login to your account</p>
+
+      <form onsubmit="return loginCheck()">
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter Email" required>
+
+
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter Password" required>
+
+
+        <div class="options">
+          <a href="#" class="forgot">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+
+
+       <p class="signup-text">
+  Don't have an account?
+  <a href="signup.html">Sign Up</a>
+</p>
+
+      </form>
+    </div>
+  </div>
+  <footer>
+    <p>Copyright © 2026 - ATI/SAM - All Rights Reserved.<br>
+     Development By NAFKA NIYAS</p>
+  </footer>
+
+  
+
+   
+    <script>
+  function loginCheck() {
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+
+    if (email === "admin@gmail.com" && password === "1234") {
+      window.location.href = "dashboard.html";
+      return false;
+    }
+
+    else if (email === "student@gmail.com" && password === "1234") {
+      window.location.href = "index.html";
+      return false;
+    }
+
+    else {
+      alert("Invalid Email or Password");
+      return false;
+    }
+  }
+</script>
+
+
+
+
+</body>
+</html>
